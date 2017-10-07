@@ -8,8 +8,15 @@
         "outDir": "./build",
         "allowJs": false,
         "jsx": "react",
-        "removeComments": true
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "types": ["reflect-metadata"],
+        "lib": ["es6"],
+        "baseUrl": ".",
+        "paths": {
+            "~/*":["build/*"]
+        }
     },
-    "include": ["./src/"],
     "exclude": ["./node_modules/"]
 }
